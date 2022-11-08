@@ -1,0 +1,32 @@
+2. Add Two Numbers
+
+
+** 문제내용
+
+음수가 아닌 두 정수를 나타내는 비어 있지 않은 연결리스트가 두 개 제공됩니다.
+숫자는 역순으로 저장되며 각 노드는 하나의 숫자를 포함합니다.
+두 숫자를 더하고 합계를 연결 리스트로 돌려주세요.
+숫자 0 자체를 제외하고 두 숫자가 선행 0을 포함하지 않는다고 가정할 수 있습니다.
+
+
+
+예시 1)
+Input: l1 = [2,4,3], l2 = [5,6,4]
+Output: [7,0,8]
+Explanation: 342 + 465 = 807.
+
+
+예시 2)
+Input: l1 = [0], l2 = [0]
+Output: [0]
+
+예시 3)
+Input: l1 = [9,9,9,9,9,9,9], l2 = [9,9,9,9]
+Output: [8,9,9,9,0,0,0,1]
+
+
+제약 )
+
+The number of nodes in each linked list is in the range [1, 100].
+0 <= Node.val <= 9
+It is guaranteed that the list represents a number that does not have leading zeros.

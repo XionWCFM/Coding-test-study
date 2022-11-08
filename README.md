@@ -16,7 +16,6 @@
 ## 👀 **코드리뷰**
 * 자신의 브랜치에 commit 및 원격에 push 
 * 풀 리퀘스트(PR) 생성
-* PR명:  요일 / 깃허브 닉네임
-  * ex) day1 - 5kdk
+* PR명:  자유
 
-스터디 시간에 PR code revuew 후 merge해서 아카이브할 예정
+스터디 시간에 PR code review 후 merge해서 아카이브할 예정

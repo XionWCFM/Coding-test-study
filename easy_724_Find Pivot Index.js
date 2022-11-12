@@ -47,21 +47,17 @@ exam 3
   -1000 <= nums[i] <= 1000
 */
 
+// pivot 인덱스 조건 : 좌 우의 합이 같은 idx
+// flow 1. 이를 확인하기 위해 전체 합을 구하기
+// flow 2. 배열을 for loof로 탐색하며 누적된 왼쪽 값과 누적된 왼쪽 합 값과,해당 인덱스를 전체 합에서 뺀 값이 같을 경우
+//         pivot 인덱스 이기때문에 해당 인덱스를 반환
+// flow 3. 왼쪽 값 누적
+// flow 4. 위 조건을 모두 만족하지 않을경우 (forloof 가 다 돌때까지 return이 없는경우 -1 반환)
+
 /**
  * @param {number[]} nums
  * @return {number}
  */
-
-
-/* 
-pivot 인덱스 조건 : 기준으로 좌 우의 합이 같은 idx
-flow 1. 이를 확인하기 위해 전체 합을 구하기
-flow 2. 배열을 for loof로 탐색하며 누적된 왼쪽 값과 누적된 왼쪽 합값과, 해당 인덱스를 전체 합에서 뺀 값이 같을 경우
-        pivot 인덱스 이기때문에 해당 인덱스를 반환 
-flow 3. 왼쪽 값 누적
-flow 4. 위 조건을 모두 만족하지 않을경우 (forloof 가 다 돌때까지 return이 없는경우 -1 반환) 
-*/
-
 
 var pivotIndex = function (nums) {
   const total = nums.reduce((acc, num) => acc + num);
